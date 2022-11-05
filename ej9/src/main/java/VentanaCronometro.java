@@ -27,10 +27,10 @@ public class VentanaCronometro /*implements ActionListener*/{
             }
         };
 
-        boton.addActionListener(oyenteBoton);//agregar a boton un oyente que se le debe pasar un objeto de la clase actionListener (que es una interfaz).
+        boton.addActionListener(oyenteBoton);//Se agrega a boton un oyente que es un objeto de actionListener (que es una interfaz).
                                             // Esto invoca a ActionPerformed que tiene que ser implementado.
                                             //Como no se pueden instanciar objetos de una interfaz, lo que hacemos es hacer una clase anónima
-                                            //En la cual implementamos el único método de ActionListener y así podemos instanciar la interfaz.
+                                            //En la cual implementamos el único método de ActionListener (actionPerformed) y así podemos instanciar la interfaz.
 
 
         ventana.setSize(300,200);
